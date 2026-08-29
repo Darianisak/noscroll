@@ -11,6 +11,14 @@ def signed_in?
   @params[:signed_in]
 end
 
+namespace "/instagram" do
+  namespace "/mobile" do
+    get "/homepage" do
+      erb :"instagram/mobile/homepage"
+    end
+  end
+end
+
 namespace "/r" do
   get "/subreddit" do
     erb :"#{signed_in? ? 'reddit/signed_in/subreddit' : 'reddit/signed_out/subreddit'}"
