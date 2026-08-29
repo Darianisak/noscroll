@@ -10,6 +10,7 @@ RSpec.describe "reddit/subreddit", type: :feature do
 
   describe "Pre DOM Mutation" do
     it "has the main social feed" do
+      puts "helloWorld"
     end
   end
 end
